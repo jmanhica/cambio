@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface CambioRepository extends JpaRepository<Cambio, Long> {
 
-   /* @Query("SELECT rates FROM Cambio c c.currency = :currency")
-    List<Rates>  getRatesByCambio(String currency);*/
+    @Query("SELECT r FROM Rates r WHERE r.currency = :currency")
+    List<Rates>  getRatesByCambio(String currency);
 }

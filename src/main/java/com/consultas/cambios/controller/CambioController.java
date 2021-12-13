@@ -34,14 +34,9 @@ public class CambioController {
         return new ResponseEntity<Cambio>(cambioService.getCambiosById(id), HttpStatus.OK);
     }
 
-   /* @GetMapping("/rates/{currency}")
+    @GetMapping("/rates/{currency}")
     public List<Rates> getRatesByCambio(@PathVariable("currency") String currency){
         return cambioService.getRatesByCambio(currency);
-    }*/
+    }
 
-   /* @GetMapping("/search")
-    public ResponseEntity<List<Cambio>> getByCurrencyByName(@RequestParam(name = "currency") String currency){
-        List<Cambio> rates = cambioService.getByCurrency(currency);
-        return new ResponseEntity<List<Cambio>>(rates, HttpStatus.OK);
-    }*/
 }

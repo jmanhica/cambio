@@ -31,9 +31,9 @@ public class CambioService {
                 new ResourceNotFoundException("Cambio", "Id", id));
     }
 
-   /* public List<Rates> getRatesByCambio(String currency) {
+    public List<Rates> getRatesByCambio(String currency) {
         return cambioRepository.getRatesByCambio(currency);
-    }*/
+    }
 
 
 }
